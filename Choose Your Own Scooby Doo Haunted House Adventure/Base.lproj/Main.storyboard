@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hUV-zH-wQk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_Your_Own_Scooby_Doo_Haunted_House_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFS-zQ-C3A">
+                                <rect key="frame" x="174" y="135" width="67" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonToInitiateSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HT-pj-cDB"/>
+                                    <segue destination="KMM-Vv-C5b" kind="show" identifier="title2Expo" id="E06-Bz-6tZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="titlePicture" translatesAutoresizingMaskIntoConstraints="NO" id="CgL-sQ-PbM">
+                                <rect key="frame" x="72" y="199" width="240" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3CP-sK-EY5"/>
+                                    <constraint firstAttribute="height" constant="229" id="ATz-IK-uYa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HAUNTED HOUSE ADVENTURE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM9-rb-U0u">
+                                <rect key="frame" x="72" y="453" width="251" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="I3E-xQ-UW4"/>
+                                    <constraint firstAttribute="width" constant="251" id="KLN-Q4-vbV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bsd-4r-SBe">
+                                <rect key="frame" x="144" y="88" width="97" height="30"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bM9-rb-U0u" firstAttribute="top" secondItem="CgL-sQ-PbM" secondAttribute="bottom" constant="29" id="19q-sH-urS"/>
+                            <constraint firstItem="CgL-sQ-PbM" firstAttribute="top" secondItem="MFS-zQ-C3A" secondAttribute="bottom" constant="34" id="2fT-vP-HtF"/>
+                            <constraint firstItem="MFS-zQ-C3A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IQ9-Cz-qCz"/>
+                            <constraint firstItem="MFS-zQ-C3A" firstAttribute="top" secondItem="Bsd-4r-SBe" secondAttribute="bottom" constant="17" id="Vub-L4-ROo"/>
+                            <constraint firstItem="Bsd-4r-SBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ll0-99-cd3"/>
+                            <constraint firstItem="bM9-rb-U0u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mga-pn-cuA"/>
+                            <constraint firstItem="CgL-sQ-PbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFs-vr-8aN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MIO-yM-oHW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="yourName" destination="Bsd-4r-SBe" id="7x3-Kg-bFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-904.5" y="-2316.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="9CQ-LA-2EU">
+            <objects>
+                <viewController id="KMM-Vv-C5b" customClass="SecondViewController" customModule="Choose_Your_Own_Scooby_Doo_Haunted_House_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cei-Nf-Atc"/>
+                        <viewControllerLayoutGuide type="bottom" id="l0O-6m-2YY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPk-eW-GKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6A-rf-mpy">
+                                <rect key="frame" x="38" y="456" width="140" height="119"/>
+                                <state key="normal" image="hauntedHouseOutside"/>
+                                <connections>
+                                    <segue destination="xmj-OY-QbP" kind="show" identifier="exploreMansion" id="nVE-JD-vfT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-e1-Pps">
+                                <rect key="frame" x="197" y="457" width="125" height="118"/>
+                                <state key="normal" image="scaredVan"/>
+                                <connections>
+                                    <segue destination="arx-Na-e2A" kind="show" identifier="dangerousDriving" id="p7R-kS-fWQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwq-op-tzf">
+                                <rect key="frame" x="61" y="72" width="274" height="377"/>
+                                <string key="text">You, Fred, Daphne, Shaggy and Scooby Doo are going on a road trip. The Mystery Machine hits something on the road and gets a flat tire, but it starts to rain. You find an abandoned mansion nearby. Do you take shelter in the mansion or risk driving to the next town? </string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap on the image of your path" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-ee-mo3">
+                                <rect key="frame" x="33" y="603" width="309" height="44"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qhi-ee-mo3" firstAttribute="centerY" secondItem="DPk-eW-GKM" secondAttribute="centerY" constant="291.5" id="cG6-zk-Obf"/>
+                            <constraint firstItem="Qhi-ee-mo3" firstAttribute="centerX" secondItem="DPk-eW-GKM" secondAttribute="centerX" id="ntE-cZ-OnA"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="expoLabel" destination="Wwq-op-tzf" id="X0P-Kh-KGK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDZ-mE-a5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165.5" y="-2375.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CEs-55-Grc">
+            <objects>
+                <viewController id="arx-Na-e2A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xez-wG-bU8"/>
+                        <viewControllerLayoutGuide type="bottom" id="TJv-6d-ljL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JL4-Sj-4Va">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ScoobyFood" translatesAutoresizingMaskIntoConstraints="NO" id="HMK-3B-sPi">
+                                <rect key="frame" x="45" y="95" width="285" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="Ry9-jR-VoE"/>
+                                    <constraint firstAttribute="height" constant="152" id="x4G-MB-wXM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKZ-dH-hZL">
+                                <rect key="frame" x="62" y="287" width="251" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="Msd-Ao-iL0"/>
+                                    <constraint firstAttribute="height" constant="262" id="vZv-jm-YTX"/>
+                                </constraints>
+                                <string key="text">You and the gang made it to the next town safely, and ate stacks of pancakes at a diner until the mystery machine was repaired and the rain stopped.</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hq-YX-pJd">
+                                <rect key="frame" x="113" y="575" width="130" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Start Over?">
+                                    <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="57N-bt-4Dc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jKZ-dH-hZL" firstAttribute="centerX" secondItem="JL4-Sj-4Va" secondAttribute="centerX" id="I3h-Pm-8rd"/>
+                            <constraint firstItem="9Hq-YX-pJd" firstAttribute="centerX" secondItem="JL4-Sj-4Va" secondAttribute="centerX" id="gAP-GH-BPU"/>
+                            <constraint firstItem="9Hq-YX-pJd" firstAttribute="top" secondItem="jKZ-dH-hZL" secondAttribute="bottom" constant="26" id="gDr-Nm-0YA"/>
+                            <constraint firstItem="jKZ-dH-hZL" firstAttribute="top" secondItem="HMK-3B-sPi" secondAttribute="bottom" constant="40" id="ibQ-hE-G4h"/>
+                            <constraint firstItem="HMK-3B-sPi" firstAttribute="centerX" secondItem="JL4-Sj-4Va" secondAttribute="centerX" id="yWq-Ed-u1r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWu-CH-3e4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1545" y="-1381"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wC8-cI-rvl">
+            <objects>
+                <viewController id="xmj-OY-QbP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DOm-IJ-8Cc"/>
+                        <viewControllerLayoutGuide type="bottom" id="3x0-vY-Orb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udC-ET-8xG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrc-0a-x0y">
+                                <rect key="frame" x="184" y="549" width="165" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Stay Together?">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i9t-xL-EAN" kind="show" id="a0i-kM-zrU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soundHeard" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-qn-FzA">
+                                <rect key="frame" x="33" y="98" width="309" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="3Af-XP-hCs"/>
+                                    <constraint firstAttribute="height" constant="198" id="TgO-f4-9Il"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You take shelter in the mansion, but then hear a loud crashing sound inside. Do you want to split up to look for more clues?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7g-T1-pri">
+                                <rect key="frame" x="67" y="318" width="251" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="Mmq-ye-tYy"/>
+                                    <constraint firstAttribute="height" constant="200" id="wId-QU-iuU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULg-B5-ZZn">
+                                <rect key="frame" x="43" y="547" width="91" height="38"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Split up?">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hZw-Ji-SJR" kind="show" identifier="" id="nh2-AV-hQc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H7g-T1-pri" firstAttribute="top" secondItem="Mbr-qn-FzA" secondAttribute="bottom" constant="22" id="8oa-YZ-YK2"/>
+                            <constraint firstItem="Hrc-0a-x0y" firstAttribute="centerY" secondItem="udC-ET-8xG" secondAttribute="centerY" constant="232" id="9br-kT-saO"/>
+                            <constraint firstItem="H7g-T1-pri" firstAttribute="centerX" secondItem="udC-ET-8xG" secondAttribute="centerX" id="Avx-lm-TEc"/>
+                            <constraint firstItem="Mbr-qn-FzA" firstAttribute="centerX" secondItem="udC-ET-8xG" secondAttribute="centerX" id="BEA-fl-Vse"/>
+                            <constraint firstItem="ULg-B5-ZZn" firstAttribute="centerY" secondItem="udC-ET-8xG" secondAttribute="centerY" constant="232.5" id="GGN-Vl-ND5"/>
+                            <constraint firstItem="H7g-T1-pri" firstAttribute="centerX" secondItem="udC-ET-8xG" secondAttribute="centerX" id="Rkb-zT-1IC"/>
+                            <constraint firstItem="Mbr-qn-FzA" firstAttribute="centerX" secondItem="udC-ET-8xG" secondAttribute="centerX" id="W7S-u8-Y27"/>
+                            <constraint firstItem="Hrc-0a-x0y" firstAttribute="leading" secondItem="ULg-B5-ZZn" secondAttribute="trailing" constant="44" id="gub-e7-2ys"/>
+                            <constraint firstItem="H7g-T1-pri" firstAttribute="centerY" secondItem="udC-ET-8xG" secondAttribute="centerY" constant="84.5" id="lkf-Lm-IHw"/>
+                            <constraint firstItem="Mbr-qn-FzA" firstAttribute="centerY" secondItem="udC-ET-8xG" secondAttribute="centerY" constant="-136.5" id="ovk-59-nAs"/>
+                            <constraint firstItem="Mbr-qn-FzA" firstAttribute="centerX" secondItem="udC-ET-8xG" secondAttribute="centerX" id="xUb-Yp-kdT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zK-LE-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481.5" y="-2356.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2jc-yY-HSu">
+            <objects>
+                <viewController id="hZw-Ji-SJR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5DK-kq-jQI"/>
+                        <viewControllerLayoutGuide type="bottom" id="fG4-o9-RBh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TyV-sU-e4p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hauntedStairs" translatesAutoresizingMaskIntoConstraints="NO" id="DHs-0r-Msh">
+                                <rect key="frame" x="33" y="101" width="309" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="B9X-F1-Cn6"/>
+                                    <constraint firstAttribute="height" constant="165" id="tPk-c4-6n3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR5-zt-ljT">
+                                <rect key="frame" x="20" y="569" width="165" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <state key="normal" title="Go Up the Stairs?">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yxc-KT-UWF" kind="show" id="uoi-Il-3dN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You convince the gang to split up to cover more ground, Do you want to explore the upper or lower floor of the mansion?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCH-qo-CQo">
+                                <rect key="frame" x="62" y="297" width="251" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="QOb-z9-e5Q"/>
+                                    <constraint firstAttribute="height" constant="215" id="hIA-Nt-8Cy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILv-Pu-YB1">
+                                <rect key="frame" x="201" y="569" width="165" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <state key="normal" title="Stay Downstairs?">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="skP-mu-Nyt" kind="show" id="YfM-93-cqr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DHs-0r-Msh" firstAttribute="centerX" secondItem="TyV-sU-e4p" secondAttribute="centerX" id="4gZ-ji-tPE"/>
+                            <constraint firstItem="DHs-0r-Msh" firstAttribute="centerY" secondItem="TyV-sU-e4p" secondAttribute="centerY" constant="-150" id="8Um-7Z-AVg"/>
+                            <constraint firstItem="ILv-Pu-YB1" firstAttribute="leading" secondItem="OR5-zt-ljT" secondAttribute="trailing" constant="18" id="AWb-Iv-TE5"/>
+                            <constraint firstItem="rCH-qo-CQo" firstAttribute="centerX" secondItem="TyV-sU-e4p" secondAttribute="centerX" id="EJQ-me-rvy"/>
+                            <constraint firstItem="DHs-0r-Msh" firstAttribute="centerX" secondItem="TyV-sU-e4p" secondAttribute="centerX" id="GQk-eW-Au6"/>
+                            <constraint firstItem="OR5-zt-ljT" firstAttribute="centerY" secondItem="TyV-sU-e4p" secondAttribute="centerY" constant="250.5" id="m98-r9-bhe"/>
+                            <constraint firstItem="ILv-Pu-YB1" firstAttribute="centerY" secondItem="TyV-sU-e4p" secondAttribute="centerY" constant="250.5" id="ocj-OJ-nh8"/>
+                            <constraint firstItem="rCH-qo-CQo" firstAttribute="centerY" secondItem="TyV-sU-e4p" secondAttribute="centerY" constant="71" id="vPU-6H-7Jp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mkz-O9-0YE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147.5" y="-2356.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VDj-4j-lZM">
+            <objects>
+                <viewController id="skP-mu-Nyt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HIs-BA-mK2"/>
+                        <viewControllerLayoutGuide type="bottom" id="KEL-Pb-Z98"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qFQ-4m-YDz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hauntedHallway2" translatesAutoresizingMaskIntoConstraints="NO" id="lsM-14-8sN">
+                                <rect key="frame" x="62" y="90" width="267" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="9b1-IT-KSS"/>
+                                    <constraint firstAttribute="height" constant="180" id="jkk-bv-K08"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xah-B0-931">
+                                <rect key="frame" x="62" y="303" width="251" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="UT8-dU-2Yn"/>
+                                    <constraint firstAttribute="height" constant="240" id="i2M-XW-nKS"/>
+                                </constraints>
+                                <string key="text">You, Shaggy, Velma, and Scooby stay downstairs while Fred and Daphne check upstairs. You see a light down the hallway and go investigate.</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6G-V9-xyi">
+                                <rect key="frame" x="157" y="585" width="60" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YYN-dz-nvg" kind="show" id="cUw-CV-ZC2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lsM-14-8sN" firstAttribute="centerX" secondItem="qFQ-4m-YDz" secondAttribute="centerX" id="6J3-K9-IhT"/>
+                            <constraint firstItem="G6G-V9-xyi" firstAttribute="centerX" secondItem="qFQ-4m-YDz" secondAttribute="centerX" id="6x3-6Q-m8I"/>
+                            <constraint firstItem="G6G-V9-xyi" firstAttribute="centerX" secondItem="qFQ-4m-YDz" secondAttribute="centerX" id="7An-x5-mpK"/>
+                            <constraint firstItem="lsM-14-8sN" firstAttribute="centerY" secondItem="qFQ-4m-YDz" secondAttribute="centerY" constant="-153.5" id="Hxo-lr-IOx"/>
+                            <constraint firstItem="G6G-V9-xyi" firstAttribute="centerY" secondItem="qFQ-4m-YDz" secondAttribute="centerY" constant="266.5" id="Zbz-h7-iMr"/>
+                            <constraint firstItem="lsM-14-8sN" firstAttribute="centerX" secondItem="qFQ-4m-YDz" secondAttribute="centerX" id="c1F-x2-66u"/>
+                            <constraint firstItem="xah-B0-931" firstAttribute="centerY" secondItem="qFQ-4m-YDz" secondAttribute="centerY" constant="89.5" id="m2p-g9-Lkq"/>
+                            <constraint firstItem="xah-B0-931" firstAttribute="centerX" secondItem="qFQ-4m-YDz" secondAttribute="centerX" id="usU-g4-lhO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bk-T5-awn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636.5" y="-2333.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EVe-aQ-D0w">
+            <objects>
+                <viewController id="i9t-xL-EAN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PgW-b6-hdI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2wg-2t-0gY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iQW-9Y-puf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangWalkingFine" translatesAutoresizingMaskIntoConstraints="NO" id="qfq-IE-n1N">
+                                <rect key="frame" x="67" y="117" width="240" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="L5m-of-yNI"/>
+                                    <constraint firstAttribute="height" constant="168" id="vfB-Zf-kmj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka1-YV-F7d">
+                                <rect key="frame" x="160" y="575" width="55" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XMz-hY-Jeq" kind="show" id="7wr-vk-Snr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You convince the gang to stay together and you all head upstairs to investigate the sound." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xc-d6-BcN">
+                                <rect key="frame" x="78" y="325" width="229" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="2xc-g7-u2m"/>
+                                    <constraint firstAttribute="height" constant="212" id="sVC-9d-zRb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Xc-d6-BcN" firstAttribute="centerX" secondItem="iQW-9Y-puf" secondAttribute="centerX" id="09q-pt-QQY"/>
+                            <constraint firstItem="ka1-YV-F7d" firstAttribute="centerY" secondItem="iQW-9Y-puf" secondAttribute="centerY" constant="256.5" id="3s8-a0-ig5"/>
+                            <constraint firstItem="2Xc-d6-BcN" firstAttribute="centerX" secondItem="iQW-9Y-puf" secondAttribute="centerX" id="CRG-yg-nf7"/>
+                            <constraint firstItem="ka1-YV-F7d" firstAttribute="centerX" secondItem="iQW-9Y-puf" secondAttribute="centerX" id="HMK-Jx-yry"/>
+                            <constraint firstItem="ka1-YV-F7d" firstAttribute="top" secondItem="2Xc-d6-BcN" secondAttribute="bottom" constant="38" id="KAT-rI-QbB"/>
+                            <constraint firstItem="qfq-IE-n1N" firstAttribute="centerY" secondItem="iQW-9Y-puf" secondAttribute="centerY" constant="-132.5" id="QEQ-Bd-RRw"/>
+                            <constraint firstItem="2Xc-d6-BcN" firstAttribute="centerY" secondItem="iQW-9Y-puf" secondAttribute="centerY" constant="97.5" id="U2k-Ff-Kqe"/>
+                            <constraint firstItem="qfq-IE-n1N" firstAttribute="centerX" secondItem="iQW-9Y-puf" secondAttribute="centerX" id="aAN-Jo-tAV"/>
+                            <constraint firstItem="ka1-YV-F7d" firstAttribute="centerX" secondItem="iQW-9Y-puf" secondAttribute="centerX" id="bkI-Yd-M6M"/>
+                            <constraint firstItem="2Xc-d6-BcN" firstAttribute="top" secondItem="qfq-IE-n1N" secondAttribute="bottom" constant="40" id="dGI-4f-yAy"/>
+                            <constraint firstItem="qfq-IE-n1N" firstAttribute="centerX" secondItem="iQW-9Y-puf" secondAttribute="centerX" id="ys8-XV-rYS"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boe-I4-HKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481.5" y="-1567.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5kn-Er-CXf">
+            <objects>
+                <viewController id="XMz-hY-Jeq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HSe-hk-lwk"/>
+                        <viewControllerLayoutGuide type="bottom" id="uIN-cy-suZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pyu-NX-hE4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hauntedFireplace" translatesAutoresizingMaskIntoConstraints="NO" id="eqD-KM-9df">
+                                <rect key="frame" x="67" y="98" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HES-FJ-1am"/>
+                                    <constraint firstAttribute="height" constant="128" id="ZOV-pm-TEC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW9-i0-cGQ">
+                                <rect key="frame" x="159" y="595" width="56" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uhu-P2-iC9" kind="show" id="g3K-5y-y0y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L5-L6-PMd">
+                                <rect key="frame" x="60" y="254" width="254" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="304" id="B2e-RB-GNa"/>
+                                    <constraint firstAttribute="width" constant="254" id="Elp-b1-GW4"/>
+                                </constraints>
+                                <string key="text">Upstairs Daphne finds a deserted library with shelves of books and a live fire in the fireplace but, Shag and Scoob  have already started roasting marshmallows on the fire.</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6L5-L6-PMd" firstAttribute="centerX" secondItem="pyu-NX-hE4" secondAttribute="centerX" id="9EJ-cQ-tlG"/>
+                            <constraint firstItem="eqD-KM-9df" firstAttribute="centerY" secondItem="pyu-NX-hE4" secondAttribute="centerY" constant="-171.5" id="GzE-4S-i17"/>
+                            <constraint firstItem="lW9-i0-cGQ" firstAttribute="centerX" secondItem="pyu-NX-hE4" secondAttribute="centerX" id="H4N-Qm-RdC"/>
+                            <constraint firstItem="6L5-L6-PMd" firstAttribute="centerY" secondItem="pyu-NX-hE4" secondAttribute="centerY" constant="72.5" id="IP8-k4-DLb"/>
+                            <constraint firstItem="lW9-i0-cGQ" firstAttribute="centerY" secondItem="pyu-NX-hE4" secondAttribute="centerY" constant="276.5" id="QUF-1c-dYE"/>
+                            <constraint firstItem="eqD-KM-9df" firstAttribute="centerX" secondItem="pyu-NX-hE4" secondAttribute="centerX" id="gye-4c-6av"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoL-qM-3Lu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001.5" y="-1401.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SoB-qW-o9p">
+            <objects>
+                <viewController id="uhu-P2-iC9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="COT-XQ-Xfn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vni-Hn-viI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dix-tJ-uht">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gangReading" translatesAutoresizingMaskIntoConstraints="NO" id="WUl-8H-WcM">
+                                <rect key="frame" x="67" y="119" width="240" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HJa-Ru-LQs"/>
+                                    <constraint firstAttribute="height" constant="184" id="o1o-wH-JHm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jinkies! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZH-gv-DxK">
+                                <rect key="frame" x="97" y="320" width="181" height="63"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jA-HU-YTt">
+                                <rect key="frame" x="159" y="556" width="57" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Eo-0q-l5C" kind="show" id="WMe-4r-S9E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Velma found a book with the history of mansion, and it says the house is cursed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJ6-Zj-EKZ">
+                                <rect key="frame" x="59" y="391" width="257" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="4Q4-1m-SLg"/>
+                                    <constraint firstAttribute="height" constant="133" id="7UF-qp-XLF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7jA-HU-YTt" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="1N2-gn-Zkn"/>
+                            <constraint firstItem="KJ6-Zj-EKZ" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="6zV-8v-rrj"/>
+                            <constraint firstItem="KJ6-Zj-EKZ" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="CLG-0r-MSV"/>
+                            <constraint firstItem="7jA-HU-YTt" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="DxW-hp-wp0"/>
+                            <constraint firstItem="vZH-gv-DxK" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="FjF-8S-qIW"/>
+                            <constraint firstItem="KJ6-Zj-EKZ" firstAttribute="top" secondItem="vZH-gv-DxK" secondAttribute="bottom" constant="8" id="Jk0-rL-ySq"/>
+                            <constraint firstItem="KJ6-Zj-EKZ" firstAttribute="top" secondItem="vZH-gv-DxK" secondAttribute="bottom" constant="8" id="NaS-N5-VBD"/>
+                            <constraint firstItem="7jA-HU-YTt" firstAttribute="centerY" secondItem="Dix-tJ-uht" secondAttribute="centerY" constant="237.5" id="PS1-H8-h1N"/>
+                            <constraint firstItem="WUl-8H-WcM" firstAttribute="centerY" secondItem="Dix-tJ-uht" secondAttribute="centerY" constant="-122.5" id="V5B-NS-aOh"/>
+                            <constraint firstItem="WUl-8H-WcM" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="X1k-hj-0u8"/>
+                            <constraint firstItem="vZH-gv-DxK" firstAttribute="centerY" secondItem="Dix-tJ-uht" secondAttribute="centerY" constant="18" id="ZlZ-ND-Arf"/>
+                            <constraint firstItem="7jA-HU-YTt" firstAttribute="top" secondItem="KJ6-Zj-EKZ" secondAttribute="bottom" constant="32" id="ccp-8y-D9T"/>
+                            <constraint firstItem="vZH-gv-DxK" firstAttribute="top" secondItem="WUl-8H-WcM" secondAttribute="bottom" constant="17" id="eb9-99-8jC"/>
+                            <constraint firstItem="KJ6-Zj-EKZ" firstAttribute="centerY" secondItem="Dix-tJ-uht" secondAttribute="centerY" constant="124" id="kdv-Cx-9rL"/>
+                            <constraint firstItem="WUl-8H-WcM" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="pe4-fJ-jOD"/>
+                            <constraint firstItem="vZH-gv-DxK" firstAttribute="centerX" secondItem="Dix-tJ-uht" secondAttribute="centerX" id="vqQ-Z0-OHW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZc-iH-xk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457.5" y="-1255.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Uuz-2I-3VS">
+            <objects>
+                <viewController id="0Eo-0q-l5C" customClass="SecondViewController" customModule="Choose_Your_Own_Scooby_Doo_Haunted_House_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GNC-Sq-VMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="jbp-Vv-UUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oLc-RD-hig">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="libraryScary" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-AS-d5G">
+                                <rect key="frame" x="49" y="96" width="277" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="277" id="ErG-OA-qVW"/>
+                                    <constraint firstAttribute="height" constant="157" id="jjS-Lh-c2g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-8R-sEL">
+                                <rect key="frame" x="151" y="554" width="65" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="GbZ-nr-TIp"/>
+                                    <constraint firstAttribute="width" constant="65" id="ohR-BV-b5j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="arx-Na-e2A" kind="show" id="lxa-TT-t9a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="It's the cursed owner of the mansion! And he doesn't look like he wants any s'more visitors!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-Tr-1MX">
+                                <rect key="frame" x="37" y="347" width="253" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="YtI-zP-oba"/>
+                                    <constraint firstAttribute="height" constant="165" id="nSe-3v-lGW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ruh-Roh!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddD-J8-QSI">
+                                <rect key="frame" x="93" y="276" width="181" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="e2Y-pH-k70"/>
+                                    <constraint firstAttribute="height" constant="63" id="fSt-T5-wRV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="scoobFace" translatesAutoresizingMaskIntoConstraints="NO" id="EhR-Sk-AZS">
+                                <rect key="frame" x="243" y="438" width="107" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="R4t-ke-kR1"/>
+                                    <constraint firstAttribute="width" constant="107" id="uMd-lF-ZVi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ogC-Tr-1MX" firstAttribute="centerY" secondItem="oLc-RD-hig" secondAttribute="centerY" constant="96" id="Eds-Ya-kzP"/>
+                            <constraint firstItem="EhR-Sk-AZS" firstAttribute="centerY" secondItem="oLc-RD-hig" secondAttribute="centerY" constant="165" id="F03-Fz-Iry"/>
+                            <constraint firstItem="ddD-J8-QSI" firstAttribute="centerX" secondItem="oLc-RD-hig" secondAttribute="centerX" id="QWJ-0o-JAY"/>
+                            <constraint firstItem="ddD-J8-QSI" firstAttribute="centerY" secondItem="oLc-RD-hig" secondAttribute="centerY" constant="-26" id="Ra6-ah-iCX"/>
+                            <constraint firstItem="nAt-8R-sEL" firstAttribute="centerX" secondItem="oLc-RD-hig" secondAttribute="centerX" id="SpW-YS-Ewa"/>
+                            <constraint firstItem="DaW-AS-d5G" firstAttribute="centerY" secondItem="oLc-RD-hig" secondAttribute="centerY" constant="-159" id="Wzc-ck-HlD"/>
+                            <constraint firstItem="DaW-AS-d5G" firstAttribute="centerX" secondItem="oLc-RD-hig" secondAttribute="centerX" id="nai-Pl-3Nu"/>
+                            <constraint firstItem="nAt-8R-sEL" firstAttribute="centerY" secondItem="oLc-RD-hig" secondAttribute="centerY" constant="244.5" id="pXC-Hh-Cdv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5Q-wQ-IOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916.5" y="-1138.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="T7t-f3-Lyf">
+            <objects>
+                <viewController id="Yxc-KT-UWF" customClass="SecondViewController" customModule="Choose_Your_Own_Scooby_Doo_Haunted_House_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dw4-W8-GHD"/>
+                        <viewControllerLayoutGuide type="bottom" id="FgK-ht-aiM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sr6-kH-hVT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upstairsScared" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-9T-EyK">
+                                <rect key="frame" x="58" y="103" width="258" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="GRe-qN-QTs"/>
+                                    <constraint firstAttribute="width" constant="258" id="RFn-Sw-DMM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXP-oQ-yZ6">
+                                <rect key="frame" x="51" y="314" width="285" height="263"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="263" id="Lu8-WV-3cc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="OKl-Yb-YZi"/>
+                                    <constraint firstAttribute="height" constant="263" id="hPj-zf-yK6"/>
+                                    <constraint firstAttribute="width" constant="285" id="jPL-FD-MKW"/>
+                                </constraints>
+                                <string key="text">You, Fred, Velma, and Daphne check upstairs while Shaggy and Scooby stay downstairs. You go to check the first room in the hallway, but Danger-Prone Daphne triggered a trap door.</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-Wh-7kc">
+                                <rect key="frame" x="160" y="605" width="55" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tAf-vN-aLc" kind="show" id="4qs-l2-WWp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IXP-oQ-yZ6" firstAttribute="centerX" secondItem="sr6-kH-hVT" secondAttribute="centerX" id="2wO-2C-eMY"/>
+                            <constraint firstItem="R4H-Wh-7kc" firstAttribute="centerX" secondItem="sr6-kH-hVT" secondAttribute="centerX" id="3gq-Ul-gkG"/>
+                            <constraint firstItem="EWT-9T-EyK" firstAttribute="centerX" secondItem="sr6-kH-hVT" secondAttribute="centerX" id="LG8-7b-aIO"/>
+                            <constraint firstItem="EWT-9T-EyK" firstAttribute="centerY" secondItem="sr6-kH-hVT" secondAttribute="centerY" constant="-138" id="LQ5-wk-rNW"/>
+                            <constraint firstItem="IXP-oQ-yZ6" firstAttribute="centerY" secondItem="sr6-kH-hVT" secondAttribute="centerY" constant="112" id="QCd-dN-7Fs"/>
+                            <constraint firstItem="R4H-Wh-7kc" firstAttribute="centerY" secondItem="sr6-kH-hVT" secondAttribute="centerY" constant="286.5" id="mi5-Fk-sfX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpz-3g-FQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.5" y="-3266.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c9j-wG-vi5">
+            <objects>
+                <viewController id="tAf-vN-aLc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GUf-yH-wTu"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Q9-PR-Ckd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iNH-VO-tBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kQ-DT-Vzj">
+                                <rect key="frame" x="157" y="581" width="60" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zyn-UR-5WP" kind="show" id="ol8-2s-Eg3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="daphnePumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="Tj6-uF-UL6">
+                                <rect key="frame" x="63" y="112" width="248" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="CkJ-vy-8bd"/>
+                                    <constraint firstAttribute="height" constant="185" id="rmt-YM-Kmd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Oh my gourd! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfy-3p-xK5">
+                                <rect key="frame" x="105" y="327" width="162" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WZS-OG-GJg"/>
+                                    <constraint firstAttribute="width" constant="162" id="mge-RX-AY6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="We're going to be squash!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOh-qC-G84">
+                                <rect key="frame" x="52" y="400" width="269" height="60"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="We're going to pie!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYG-da-7mR">
+                                <rect key="frame" x="67" y="489" width="240" height="60"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tj6-uF-UL6" firstAttribute="centerX" secondItem="iNH-VO-tBo" secondAttribute="centerX" id="JRb-8V-fMq"/>
+                            <constraint firstItem="WOh-qC-G84" firstAttribute="top" secondItem="Sfy-3p-xK5" secondAttribute="bottom" constant="29" id="Zj2-hW-f5Q"/>
+                            <constraint firstItem="0kQ-DT-Vzj" firstAttribute="centerX" secondItem="iNH-VO-tBo" secondAttribute="centerX" id="efj-6v-Gh1"/>
+                            <constraint firstItem="Sfy-3p-xK5" firstAttribute="top" secondItem="Tj6-uF-UL6" secondAttribute="bottom" constant="30" id="jCc-Qr-YH7"/>
+                            <constraint firstItem="jYG-da-7mR" firstAttribute="centerX" secondItem="iNH-VO-tBo" secondAttribute="centerX" id="kOe-TQ-hzW"/>
+                            <constraint firstItem="WOh-qC-G84" firstAttribute="centerX" secondItem="iNH-VO-tBo" secondAttribute="centerX" id="kXC-Fq-nUr"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlJ-xr-hyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2282.5" y="-3373.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="9rF-d8-Y2t">
+            <objects>
+                <viewController id="zyn-UR-5WP" customClass="SecondViewController" customModule="Choose_Your_Own_Scooby_Doo_Haunted_House_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RKD-is-4Ta"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Gm-Yr-L3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hb4-bt-ECk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pumpkinMonster" translatesAutoresizingMaskIntoConstraints="NO" id="DZI-u2-s3P">
+                                <rect key="frame" x="68" y="81" width="253" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="9RM-Dv-qX4"/>
+                                    <constraint firstAttribute="width" constant="253" id="y9X-hy-N7e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This pumpkin patch is too seedy for me." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaR-yv-r9q">
+                                <rect key="frame" x="20" y="345" width="232" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="4WN-dm-fqf"/>
+                                    <constraint firstAttribute="width" constant="232" id="v1K-mN-qZr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7V-ac-yB2">
+                                <rect key="frame" x="158" y="588" width="59" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="arx-Na-e2A" kind="show" id="Dkf-Cj-utc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey gang! Get in the mystery machine!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-5U-yVc">
+                                <rect key="frame" x="158" y="445" width="164" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="DOo-Ah-bpt"/>
+                                    <constraint firstAttribute="height" constant="98" id="ded-jI-CNU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FredFace" translatesAutoresizingMaskIntoConstraints="NO" id="Als-rB-9EQ">
+                                <rect key="frame" x="30" y="433" width="107" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="RNQ-5A-jZv"/>
+                                    <constraint firstAttribute="width" constant="107" id="fne-OK-WJC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DaphneFace" translatesAutoresizingMaskIntoConstraints="NO" id="ufJ-1d-abU">
+                                <rect key="frame" x="244" y="305" width="123" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="odi-mi-zW9"/>
+                                    <constraint firstAttribute="width" constant="123" id="uxL-VH-R5M"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeepers!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGi-Qb-xU0">
+                                <rect key="frame" x="68" y="305" width="112" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="vZx-h5-a9L"/>
+                                    <constraint firstAttribute="height" constant="27" id="y0v-bq-7Ah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jaR-yv-r9q" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="45" id="1eQ-v2-iCh"/>
+                            <constraint firstItem="lGi-Qb-xU0" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" constant="-63.5" id="BOf-nI-ue0"/>
+                            <constraint firstItem="1AS-5U-yVc" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="160.5" id="CW6-3t-FQ7"/>
+                            <constraint firstItem="lGi-Qb-xU0" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="-15" id="KOz-cs-yW1"/>
+                            <constraint firstItem="H7V-ac-yB2" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" id="Mvw-K7-CLZ"/>
+                            <constraint firstItem="Als-rB-9EQ" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="160" id="Px8-fj-iub"/>
+                            <constraint firstItem="jaR-yv-r9q" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" constant="-51.5" id="SfG-yU-d3t"/>
+                            <constraint firstItem="Als-rB-9EQ" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" constant="-104" id="XBY-Ge-HSZ"/>
+                            <constraint firstItem="DZI-u2-s3P" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" id="Xbf-wy-2v1"/>
+                            <constraint firstItem="1AS-5U-yVc" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" constant="52.5" id="ZgM-SG-8v2"/>
+                            <constraint firstItem="H7V-ac-yB2" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="269.5" id="eVb-VL-NtJ"/>
+                            <constraint firstItem="DZI-u2-s3P" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="-156" id="lkk-Te-68O"/>
+                            <constraint firstItem="ufJ-1d-abU" firstAttribute="centerX" secondItem="Hb4-bt-ECk" secondAttribute="centerX" constant="118" id="r4a-kX-DV0"/>
+                            <constraint firstItem="ufJ-1d-abU" firstAttribute="centerY" secondItem="Hb4-bt-ECk" secondAttribute="centerY" constant="32" id="zAd-Iw-Hxh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgz-hh-IiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2800.5" y="-3455.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zqK-rl-aZO">
+            <objects>
+                <viewController id="YYN-dz-nvg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D9H-hp-GK4"/>
+                        <viewControllerLayoutGuide type="bottom" id="VIz-ma-H7J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EKU-sv-znh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="IDW-su-Dc0">
+                                <rect key="frame" x="31" y="93" width="330" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="Do5-k4-gDR"/>
+                                    <constraint firstAttribute="width" constant="330" id="I9o-SH-EOm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-MU-dAC">
+                                <rect key="frame" x="169" y="581" width="54" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WHt-Io-6Eh" kind="show" id="xOc-kc-CjC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="At the end of the hallway is a kitchen with the lights on. Scooby finds a shiny food dish with a note that says" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5V-br-cyX">
+                                <rect key="frame" x="71" y="277" width="251" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="183-zp-fzt"/>
+                                    <constraint firstAttribute="width" constant="251" id="SbU-dK-2yh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bon Appétit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNP-4W-Pxo">
+                                <rect key="frame" x="114" y="494" width="164" height="53"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dNP-4W-Pxo" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="9Jf-oM-J5q"/>
+                            <constraint firstItem="dNP-4W-Pxo" firstAttribute="centerY" secondItem="EKU-sv-znh" secondAttribute="centerY" constant="187" id="D11-D2-IZ7"/>
+                            <constraint firstItem="hHa-MU-dAC" firstAttribute="centerY" secondItem="EKU-sv-znh" secondAttribute="centerY" constant="262.5" id="I35-v5-AvU"/>
+                            <constraint firstItem="hHa-MU-dAC" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="NEB-nw-KKn"/>
+                            <constraint firstItem="IDW-su-Dc0" firstAttribute="centerY" secondItem="EKU-sv-znh" secondAttribute="centerY" constant="-152.5" id="NRs-7T-rNQ"/>
+                            <constraint firstItem="F5V-br-cyX" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="OhM-Fa-SMo"/>
+                            <constraint firstItem="IDW-su-Dc0" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="Q2J-Jx-h2d"/>
+                            <constraint firstItem="IDW-su-Dc0" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="YKe-DR-YaS"/>
+                            <constraint firstItem="F5V-br-cyX" firstAttribute="centerY" secondItem="EKU-sv-znh" secondAttribute="centerY" constant="48" id="clS-hy-Js2"/>
+                            <constraint firstItem="IDW-su-Dc0" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="fLt-YH-G1n"/>
+                            <constraint firstItem="F5V-br-cyX" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="fmN-ud-gw5"/>
+                            <constraint firstItem="dNP-4W-Pxo" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="gZb-Ma-XlV"/>
+                            <constraint firstItem="hHa-MU-dAC" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="mRk-ZZ-zPX"/>
+                            <constraint firstItem="dNP-4W-Pxo" firstAttribute="centerX" secondItem="EKU-sv-znh" secondAttribute="centerX" id="max-BS-N92"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z95-cy-Yca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105.5" y="-2333.5"/>
+        </scene>
+        <!--Dish View Controller-->
+        <scene sceneID="ptn-pp-VJZ">
+            <objects>
+                <viewController id="WHt-Io-6Eh" customClass="DishViewController" customModule="Choose_Your_Own_Scooby_Doo_Haunted_House_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JaJ-pA-F2r"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyT-dp-f8h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BnJ-Uj-IGr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-UQ-X0O">
+                                <rect key="frame" x="67" y="96" width="240" height="415"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap to Open" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh4-xT-ER4">
+                                        <rect key="frame" x="31" y="220" width="178" height="129"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="129" id="9so-88-eAp"/>
+                                            <constraint firstAttribute="width" constant="178" id="y47-ta-LkA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="foodCover" translatesAutoresizingMaskIntoConstraints="NO" id="FlM-fr-lge">
+                                        <rect key="frame" x="10" y="33" width="221" height="165"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="165" id="4w8-IB-Scl"/>
+                                            <constraint firstAttribute="width" constant="221" id="tRG-bo-DQC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FlM-fr-lge" firstAttribute="centerY" secondItem="ll3-UQ-X0O" secondAttribute="centerY" id="8cY-nC-Wtf"/>
+                                    <constraint firstItem="FlM-fr-lge" firstAttribute="centerX" secondItem="ll3-UQ-X0O" secondAttribute="centerX" id="FIc-Vz-yF6"/>
+                                    <constraint firstItem="Yh4-xT-ER4" firstAttribute="top" secondItem="FlM-fr-lge" secondAttribute="bottom" constant="5" id="fAJ-or-YBH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rW-dp-Edg">
+                                <rect key="frame" x="154" y="583" width="66" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gi7-xP-bRy" kind="show" id="A4r-7A-51U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="92s-HP-iJz" appends="YES" id="0uc-Hc-5qk"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="DishView" destination="ll3-UQ-X0O" id="Fty-gP-koQ"/>
+                        <outlet property="ImageDish" destination="FlM-fr-lge" id="f2o-v6-qNh"/>
+                        <outlet property="labelImage" destination="Yh4-xT-ER4" id="RT2-pZ-fJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yr5-2i-Ibf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="92s-HP-iJz">
+                    <connections>
+                        <action selector="createIceCream:" destination="WHt-Io-6Eh" id="yQw-1n-Mfi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2551.5" y="-2333.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tkJ-bU-f46">
+            <objects>
+                <viewController id="Gi7-xP-bRy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uxg-PF-P6l"/>
+                        <viewControllerLayoutGuide type="bottom" id="rg2-vV-d1d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KGC-DQ-hdr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creamGhosts" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-4Z-QML">
+                                <rect key="frame" x="62" y="88" width="250" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NeM-lt-J9L"/>
+                                    <constraint firstAttribute="height" constant="170" id="vsC-zT-gCv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoinks! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwu-tN-UY6">
+                                <rect key="frame" x="120" y="284" width="135" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Z0u-IZ-bvq"/>
+                                    <constraint firstAttribute="width" constant="135" id="aGU-iX-h9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I guess those haunting flavors are the cherry on top!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRl-Zx-aSj">
+                                <rect key="frame" x="126" y="326" width="229" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="YHh-be-Y30"/>
+                                    <constraint firstAttribute="width" constant="229" id="eOL-jp-X9z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This isn't the time for brain freeze guys! Lets go!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygo-r6-vCE">
+                                <rect key="frame" x="20" y="455" width="230" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="ZPQ-fq-hkx"/>
+                                    <constraint firstAttribute="width" constant="230" id="be4-39-GUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cso-cE-Gsv">
+                                <rect key="frame" x="156" y="588" width="62" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="arx-Na-e2A" kind="show" id="V32-2K-RkB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShagFace" translatesAutoresizingMaskIntoConstraints="NO" id="IwG-ga-1Ox">
+                                <rect key="frame" x="20" y="326" width="107" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="JUM-mq-h2v"/>
+                                    <constraint firstAttribute="width" constant="107" id="XNy-Qq-b9y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VelmaFace" translatesAutoresizingMaskIntoConstraints="NO" id="mwE-xl-Ogr">
+                                <rect key="frame" x="248" y="455" width="107" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="4RG-vl-RrP"/>
+                                    <constraint firstAttribute="height" constant="121" id="Lc6-fa-P3J"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nRl-Zx-aSj" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" constant="53" id="2ch-pn-O4N"/>
+                            <constraint firstItem="cso-cE-Gsv" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="269.5" id="42U-uq-Cbr"/>
+                            <constraint firstItem="J9l-4Z-QML" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" id="GLH-2Z-bRy"/>
+                            <constraint firstItem="IwG-ga-1Ox" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="53" id="KEa-9J-7nQ"/>
+                            <constraint firstItem="mwE-xl-Ogr" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" constant="114" id="LtD-T3-mXJ"/>
+                            <constraint firstItem="J9l-4Z-QML" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="-160.5" id="Mx1-FN-tQ1"/>
+                            <constraint firstItem="IwG-ga-1Ox" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" constant="-114" id="Ol1-Lf-UHu"/>
+                            <constraint firstItem="nRl-Zx-aSj" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="45.5" id="QAa-Bx-1EB"/>
+                            <constraint firstItem="jwu-tN-UY6" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="-30" id="R9V-fB-Zke"/>
+                            <constraint firstItem="cso-cE-Gsv" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" id="WQ8-m7-JdN"/>
+                            <constraint firstItem="jwu-tN-UY6" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" id="bbQ-42-nkZ"/>
+                            <constraint firstItem="ygo-r6-vCE" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="174" id="gAM-d9-kqp"/>
+                            <constraint firstItem="mwE-xl-Ogr" firstAttribute="centerY" secondItem="KGC-DQ-hdr" secondAttribute="centerY" constant="182" id="hwN-LZ-Q9L"/>
+                            <constraint firstItem="ygo-r6-vCE" firstAttribute="centerX" secondItem="KGC-DQ-hdr" secondAttribute="centerX" constant="-52.5" id="iqv-iy-EOU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzL-oG-h04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3021.5" y="-2333.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fIh-rH-Ccf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hUV-zH-wQk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mJT-Og-fMg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ukw-MW-sUi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ees-2K-puV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1614" y="-2375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DaphneFace" width="230" height="230"/>
+        <image name="FredFace" width="744" height="912"/>
+        <image name="ScoobyFood" width="800" height="450"/>
+        <image name="ShagFace" width="660" height="782"/>
+        <image name="VelmaFace" width="759" height="962"/>
+        <image name="creamGhosts" width="225" height="195"/>
+        <image name="daphnePumpkin" width="520" height="390"/>
+        <image name="foodCover" width="798" height="643"/>
+        <image name="gangReading" width="300" height="225"/>
+        <image name="gangWalkingFine" width="854" height="640"/>
+        <image name="hauntedFireplace" width="320" height="274"/>
+        <image name="hauntedHallway2" width="320" height="168"/>
+        <image name="hauntedHouseOutside" width="320" height="186"/>
+        <image name="hauntedStairs" width="320" height="142"/>
+        <image name="kitchen" width="500" height="281"/>
+        <image name="libraryScary" width="620" height="368"/>
+        <image name="pumpkinMonster" width="290" height="180"/>
+        <image name="scaredVan" width="692" height="656"/>
+        <image name="scoobFace" width="700" height="821"/>
+        <image name="soundHeard" width="526" height="297"/>
+        <image name="titlePicture" width="400" height="400"/>
+        <image name="upstairsScared" width="484" height="359"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="57N-bt-4Dc"/>
+        <segue reference="Dkf-Cj-utc"/>
+    </inferredMetricsTieBreakers>
+</document>
